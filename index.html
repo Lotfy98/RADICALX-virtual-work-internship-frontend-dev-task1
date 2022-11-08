@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-compatible" content="ie=edge">
+        <!-- REACT LIBRARY -->
+        <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
+        <!-- REACT DOM LIBRARY -->
+        <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+        <!-- BABEL LIBRARY -->
+        <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Space+Mono&display=swap" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Manrope&family=Open+Sans:wght@300&family=Space+Mono&display=swap" rel="stylesheet">
+        <title>Welcome</title>
+    </head>
+    <body>
+        <div id="app">React hasnot rendered yet!</div>
+
+            <script type="text/babel">
+                function Body() {
+                document.body.style.backgroundColor="#f0f0f5";
+				document.body.style.boxSizing="border-box";
+
+					
+					return(
+						<div>
+							<Navbar/>
+							<Heading/>
+							<Insights/>
+							<Titles/>
+							<Content/>
+						</div>
+					);
+					}
+
+					function Titles(){
+						var titlesStyle={
+							height:"35px",
+							width:"1050px",
+							position:"absolute",
+							top:"295px",
+							left:"300px"
+						}
+
+						var title1Style={
+							fontFamily:"Open Sans, sans-serif",
+							fontSize:"15px",
+							fontWeight:"bold",
+							display:"inline-block",
+							padding:"5px",
+							marginRight:"350px"
+						}
+						var title2Style={
+							fontFamily:"Open Sans, sans-serif",
+							fontSize:"15px",
+							fontWeight:"bold",
+							display:"inline-block",
+							padding:"5px",
+							marginRight:"100px"
+						}
+						var title3Style={
+							fontFamily:"Open Sans, sans-serif",
+							fontSize:"15px",
+							fontWeight:"bold",
+							display:"inline-block",
+							padding:"5px",
+							marginRight:"25px"
+						}
+						var title4Style={
+							fontFamily:"Open Sans, sans-serif",
+							fontSize:"15px",
+							fontWeight:"bold",
+							display:"inline-block",
+							padding:"5px"
+						}
+
+						return(
+							<div style={titlesStyle}>
+								<p style={title1Style}>Internship Title</p>
+								<p style={title2Style}>Completion Period</p>
+								<p style={title3Style}>Total Enrolled</p>
+								<p style={title4Style}>Qualified Candidates</p>
+								
+							</div>
+						)
+					}
+
+					
+
+					function Content() {
+
+						var contentDiv={
+							backgroundColor:"#fff",
+							height:"340px",
+							width:"1050px",
+							borderRadius:"12px",
+							position:"absolute",
+							top:"345px",
+							left:"290px"
+						}
+
+						return(
+							
+							<div style={contentDiv}>
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+								
+							</div>
+						)
+					}
+
+					function Insights() {
+						
+						var divStyle={
+							backgroundColor:"#ffffff",
+							top:"105px",
+							left:"290px",
+							height:"200px",
+							width:"1050px",
+							borderRadius:"15px",
+							position:"absolute"
+
+						}
+						
+						var headingStyle={
+							fontSize:"20px",
+							fontWeight:"bold",
+							fontFamily:"Open Sans, sans-serif",
+							margin:"25px 5px 0 10px "
+
+						}
+
+						var insightsStyle={
+							backgroundColor:"#f0f0f5",
+							height:"180px",
+							width:"280px",
+							margin:"10px",
+							fontWeight:600,
+							borderRadius:"12px",
+
+						}
+
+						var matterStyle={
+							fontFamily:"Open Sans, sans-serif",
+							fontSize:"12px",
+							padding:"5px 0 0 10px",
+							wordSpacing:"1px",
+							letterSpacing:"1px"
+						}
+
+						var buttonsStyle={
+							fontFamily:"Open Sans, sans-serif",
+							backgroundColor:"#f0f0f5",
+							height:"35px",
+							width:"725px",
+							borderRadius:"12px",
+							position:"absolute",
+							top:"10px",
+							left:"300px",
+							paddingBottom:"10px"
+						}
+
+						var thisWeek={
+							fontWeight:"bold",
+							backgroundColor:"#ffff",
+							fontFamily:"Open Sans, sans-serif",
+							fontSize:"15px",
+							display:"inline-block",
+							borderRadius:"10px",
+							padding:"6px",
+							border:"none",
+							color:"#0000",
+							margin:"5px"
+						}
+
+						var thisMonth={
+							fontWeight:"bold",
+							backgroundColor:"#ffff",
+							fontFamily:"Open Sans, sans-serif",
+							fontSize:"15px",
+							display:"inline-block",
+							borderRadius:"10px",
+							padding:"6px",
+							border:"none",
+							fontWeight:"bold",
+							margin:"5px"
+						}
+
+						var selectDate={
+							fontWeight:"bold",
+							backgroundColor:"#ffff",
+							fontFamily:"Open Sans, sans-serif",
+							fontSize:"15px",
+							padding:"6px",
+							display:"inline-block",
+							borderRadius:"10px",
+							marginLeft:"425px",
+							border:"none",
+							verticalAlign:"middle"
+						}
+
+						var iconStyle={
+							verticalAlign:"middle",
+							color:"#9900cc",
+							fontSize:"15px",
+							paddingRight:"5px"
+						}
+						
+						var linksStyle={
+							textDecoration:"none",
+							fontWeight:800,
+							color:"#000000"
+						}
+
+						var numbersDiv={
+							position:"absolute",
+							top:"50px",
+							left:"290px"
+						}
+
+						var numbers1Style={
+							fontSize:"32px",
+							fontFamily:"Manrope', sans-serif",
+							display:"inline-block",
+							margin:"20px 30px",
+							color:"#111",
+							borderRight:"1px solid #290a1f",
+							height:"120px",
+							paddingRight:"20px"
+
+						}
+
+						var numbers2Style={
+							fontSize:"32px",
+							fontFamily:"Manrope', sans-serif",
+							display:"inline-block",
+							margin:"20px 20px 20px -15px",
+							color:"#111",
+							borderRight:"1px solid #290a1f",
+							height:"120px",
+							paddingRight:"15px"
+
+						}
+
+						var numbers3Style={
+							fontSize:"32px",
+							fontFamily:"Manrope', sans-serif",
+							display:"inline-block",
+							margin:"20px",
+							color:"#111",
+							borderRight:"1px solid #290a1f",
+							height:"120px",
+							paddingRight:"35px"
+
+						}
+
+						var numbers4Style={
+							fontSize:"32px",
+							fontFamily:"Manrope', sans-serif",
+							display:"inline-block",
+							margin:"20px 20px 20px 5px ",
+							color:"#111",
+							borderRight:"1px solid #290a1f",
+							height:"120px",
+							paddingRight:"30px"
+
+						}
+
+
+						var numbers5Style={
+							fontSize:"32px",
+							fontFamily:"Manrope', sans-serif",
+							display:"inline-block",
+							margin:"20px 15px 20px 15px",
+							color:"#111",
+							borderRight:"1px solid #290a1f",
+							height:"120px",
+							paddingRight:"30px"
+
+						}
+
+						var numbers6Style={
+							fontSize:"32px",
+							fontFamily:"Manrope', sans-serif",
+							display:"inline-block",
+							margin:"20px 20px 20px 15px",
+							color:"#111"
+
+						}
+
+
+						var number1Icon={
+
+							fontSize:"35px",
+							position:"absolute",
+							top:"65px",
+							left:"65px",
+							display:"block"
+						}
+
+						var number2Icon={
+
+							fontSize:"35px",
+							position:"absolute",
+							top:"65px",
+							left:"200px",
+							display:"block"
+						}
+
+						var number3Icon={
+
+							fontSize:"35px",
+							position:"absolute",
+							top:"65px",
+							left:"318px",
+							display:"block"
+						}
+
+						var number4Icon={
+
+							fontSize:"35px",
+							position:"absolute",
+							top:"65px",
+							left:"428px",
+							display:"block"
+						}
+
+						var number5Icon={
+	
+							fontSize:"35px",
+							position:"absolute",
+							top:"65px",
+							left:"540px",
+							display:"block"
+						}
+
+						var number6Icon={
+
+							fontSize:"35px",
+							position:"absolute",
+							top:"65px",
+							left:"655px",
+							display:"block"
+						}
+
+						var title1Style={
+							fontSize:"12px",
+							fontFamily:"Open Sans, sans-serif",
+							position:"absolute",
+							top:"105px",
+							left:"30px"
+						}
+
+						var title2Style={
+							fontSize:"12px",
+							fontFamily:"Open Sans, sans-serif",
+							position:"absolute",
+							top:"105px",
+							left:"183px"
+						}
+
+						var title3Style={
+							fontSize:"12px",
+							fontFamily:"Open Sans, sans-serif",
+							position:"absolute",
+							top:"105px",
+							left:"282px"
+						}
+
+						var title4Style={
+							fontSize:"12px",
+							fontFamily:"Open Sans, sans-serif",
+							position:"absolute",
+							top:"105px",
+							left:"415px"
+						}
+
+						var title5Style={
+							fontSize:"12px",
+							fontFamily:"Open Sans, sans-serif",
+							position:"absolute",
+							top:"105px",
+							left:"525px"
+						}
+
+						var title6Style={
+							fontSize:"12px",
+							fontFamily:"Open Sans, sans-serif",
+							position:"absolute",
+							top:"105px",
+							left:"620px"
+						}
+
+						return(
+							<div style={divStyle}>
+								<div style={insightsStyle}>
+									<heading style={headingStyle}>Internship Insights</heading>
+									<p style={matterStyle}>In the eighteenth century the german philosopher immanuel kant developed a theory of knowledge in which knowledge about space can be both a priori and synthetic.</p>
+									<div style={buttonsStyle}>
+									<button style={thisWeek}><a style={linksStyle} href="#">This Week</a></button>
+									<button  style={thisMonth}><a style={linksStyle}  href="#">This Month</a></button>
+									<button  style={selectDate}><ion-icon name="calendar-outline" style={iconStyle}></ion-icon><a style={linksStyle} href="#">Select Date</a></button>
+									</div>
+									<div style={numbersDiv}>
+									<div style={numbers1Style}>100,000<ion-icon style={number1Icon}  name="man-outline"></ion-icon><p style={title1Style}>Total Enrollments</p></div>
+									<div style={numbers2Style}>65,000<ion-icon style={number2Icon} name="checkmark-outline"></ion-icon><p style={title2Style}>Completion</p></div>
+									<div style={numbers3Style}>850<ion-icon style={number3Icon} name="stats-chart-outline"></ion-icon><p style={title3Style}>Qualified Candidates</p></div>
+									<div style={numbers4Style}>375<ion-icon style={number4Icon} name="paper-plane-outline"></ion-icon><p style={title4Style}>Reached Out</p></div>
+									<div style={numbers5Style}>300<ion-icon style={number5Icon} name="person-circle-outline"></ion-icon><p style={title5Style}>Interviews Set</p></div>
+									<div style={numbers6Style}>150<ion-icon style={number6Icon} name="star-outline"></ion-icon><p style={title6Style}>Candidates Hired</p></div>
+									</div>
+									<div>
+									
+									</div>
+								</div>
+							</div>
+						)
+					}
+
+
+					function Heading(){
+						
+			
+						var headingStyle={
+								fontSize:"25px",
+								fontFamily:"Space Mono, monospace",
+								fontWeight:700,
+								display:"block",
+								left:"290px",
+								top:"45px",
+								position:"absolute"
+									
+							}
+							var buttonStyle={
+								display:"inline-block",
+								position:"absolute",
+								fontSize:"14px",
+								top:"3px",
+								left:"840px",
+								height:"40px",
+								width:"200px",
+								borderRadius:"12px",
+								backgroundColor:"#9933ff",
+								color:"#fffff",
+								border:"1px solid #9933ff",
+								verticalAlign:"middle",
+								textDecoration:"none"
+							}
+							var iconStyle={
+								fontSize:"20px",
+								verticalAlign:"middle",
+								color:"#fff"
+							}
+
+							var linksStyle={
+							textDecoration:"none"
+						}
+
+
+
+
+
+					return(
+
+					<div style={headingStyle}>
+						<heading>Internships</heading>
+						<button style={buttonStyle}><ion-icon name="add-circle-outline" style={iconStyle}></ion-icon><a style={linksStyle} href="#">Create New Internship</a></button>
+					</div>
+					);
+				}
+
+					function Navbar() {
+
+
+
+						var navbarStyle={
+							height:"645px",
+							width:"210px",
+							backgroundColor:"#fff",
+							border:"1px solid #fff",
+							borderRadius:"15px",
+							padding:"15px",
+							zIndex:1,
+							overflowX:"hidden"
+						}
+
+
+
+						var headingStyle={
+							fontSize:"40px",
+							padding:"60px 23px"
+						}
+
+						var linksStyle={
+							color:"#000000",
+							textDecoration:"none",
+							fontSize:"18px",
+							textAlign:"left",
+							fontFamily:"Space Mono, monospace",
+							padding:"3px",
+							margin:"15px 0 15px 15px",
+							display:"inline-block"
+						}
+
+						var listStyle={
+							listStyleType:"none",
+							padding:"60px 0",
+							verticalAlign:"middle"
+						}
+
+						var iconStyle={
+							fontSize:"20px",
+							verticalAlign:"middle"
+						}
+
+						var UserName={
+							margin:"70px 20px 0 25px"
+						}
+
+						var imageStyle={
+							height:"40px",
+							width:"40px",
+							borderRadius:"10px",
+							verticalAlign:"middle",
+							margin:"10px"
+						}
+						
+
+						
+						return(
+							<div style={navbarStyle}>
+								
+								<heading style={headingStyle}>RadicalX</heading>
+								<ul style={listStyle}>
+									<li><ion-icon name="clipboard-outline" style={iconStyle}></ion-icon><a href="#"style={linksStyle}>Dashboard</a></li>	
+									<li><ion-icon name="ribbon-outline" style={iconStyle}></ion-icon><a href="#"style={linksStyle}>Apprenterships</a></li>	
+									<li><ion-icon name="book-outline" style={iconStyle}></ion-icon><a href="#"style={linksStyle}>Internships</a></li>
+									<li><ion-icon name="briefcase-outline" style={iconStyle}></ion-icon><a href="#"style={linksStyle}>Jobs</a></li>
+									<li><ion-icon name="settings-outline" style={iconStyle}></ion-icon><a href="#"style={linksStyle}>Settings</a></li>
+								</ul>	
+								<p style={UserName}><img src="Untitled.png" style={imageStyle}></img>Adam Scott</p>							
+							</div>							
+						)
+					}
+        ReactDOM.render(
+            <Body/>,
+            document.getElementById("app")
+        );
+        </script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        
+    </body>
+    
+</html>
